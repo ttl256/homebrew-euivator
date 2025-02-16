@@ -5,12 +5,12 @@
 class Euivator < Formula
   desc "A CLI tool to work with EUIs"
   homepage "https://github.com/ttl256/euivator"
-  version "0.0.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ttl256/euivator/releases/download/v0.0.1/euivator_0.0.1_darwin_amd64.tar.gz"
-      sha256 "50d46d833f344d43bc2e1eb8f78e0055cbd9ea29b094d2f0aede3ca3360d6789"
+      url "https://github.com/ttl256/euivator/releases/download/v1.0.0/euivator_1.0.0_darwin_amd64.tar.gz"
+      sha256 "56dbf57034bd430905764a13032526e8eaf2407eed8249bb4cdf002f48dd4423"
 
       def install
         bin.install "euivator"
@@ -24,8 +24,8 @@ class Euivator < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ttl256/euivator/releases/download/v0.0.1/euivator_0.0.1_darwin_arm64.tar.gz"
-      sha256 "2bb70bfd72e4f2de07b8e532ba7d878b710cef0901e0d72f6f62389ef86f7df8"
+      url "https://github.com/ttl256/euivator/releases/download/v1.0.0/euivator_1.0.0_darwin_arm64.tar.gz"
+      sha256 "d73fb49efffddde2f3d698769255291acf159ce2b0316b26c24cddeaa8f62c22"
 
       def install
         bin.install "euivator"
@@ -43,8 +43,8 @@ class Euivator < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ttl256/euivator/releases/download/v0.0.1/euivator_0.0.1_linux_amd64.tar.gz"
-        sha256 "47c671ab0202c3a8ac8907b151fcbe70bfe82d3bb03a730d0edf7a65845e63b4"
+        url "https://github.com/ttl256/euivator/releases/download/v1.0.0/euivator_1.0.0_linux_amd64.tar.gz"
+        sha256 "f2b2cb9fc61b63c5c9efd8477fba875ba8d1a245ca2ca5cf20fea030fa613bd6"
 
         def install
           bin.install "euivator"
@@ -60,8 +60,8 @@ class Euivator < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ttl256/euivator/releases/download/v0.0.1/euivator_0.0.1_linux_arm64.tar.gz"
-        sha256 "524327b7cdae0c353e461f8497aa720448bb487f8604020404d67f664da533f8"
+        url "https://github.com/ttl256/euivator/releases/download/v1.0.0/euivator_1.0.0_linux_arm64.tar.gz"
+        sha256 "95cec171aba575a0d566b1f6ac7d29e55d91749fa9f19d74f6f6f9e37e3d7dbf"
 
         def install
           bin.install "euivator"
